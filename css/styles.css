@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'good times';
+    src: url(../fontes/good\ times\ rg.otf)format(opentype);
+}
+
+:root{
+    --cor01:#F2A391;
+    --cor02: #1374F2;
+    --cor03: #0C18F2;
+    --cor04: #080C59;
+    --cor05: #010326;
+    --fonte-destaque:'good times', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: url(../imagens/technology.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+    font-family: var(--fonte-destaque);
+}
+header h1{
+    padding: 20px;
+}
+
+header p{
+    font-weight: bolder;
+    padding: 20px;
+    vertical-align: bottom;
+}
+
+nav{
+    background-color: var(--cor04);
+    color: white;
+}
