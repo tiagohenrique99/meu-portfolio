@@ -1,6 +1,18 @@
 @charset "UTF-8";
 
 @font-face {
+    font-family:'Batman' ;
+    src: url(../fontes/batmfa__.ttf)format(truetype);
+}
+@font-face {
+    font-family: 'spaceranger';
+    src: url(../fontes/spaceranger.ttf)format(truetype);
+}
+@font-face {
+    font-family: 'SEGA';
+    src: url(../fontes/SEGA.TTF)format(truetype);
+}
+@font-face {
     font-family: 'good times';
     src: url(../fontes/good\ times\ rg.otf)format(opentype);
 }
@@ -12,6 +24,9 @@
     --cor04: #080C59;
     --cor05: #010326;
     --fonte-destaque:'good times', cursive;
+    --fonte-sega:'SEGA',cursive;
+    --fonte-space:'spaceranger', cursive;
+    --fonte-batman:'Batman', cursive;
 }
 
 *{
@@ -26,6 +41,10 @@ header{
     height: 30vh;
     font-family: var(--fonte-destaque);
 }
+
+body{
+    background-color: black;
+}
 header h1{
     padding: 20px;
 }
@@ -38,5 +57,63 @@ header p{
 
 nav{
     background-color: var(--cor04);
-    color: white;
+    
+    
+   
 }
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bolder;
+
+}
+
+main{
+    padding-left: 30px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    
+}
+
+section#titulo{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section#sobre{
+   text-align: center;
+   vertical-align: middle;
+   padding: 20px;
+}
+
+picture{
+    display: inline-block;
+}
+
+picture > img{
+    max-width: 400px;
+    padding-top: 20px;
+}
+
+article{
+    display: inline-block;
+    width: 40vw;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+
+}
+
+article h1{
+    font-family: var(--fonte-batman);
+    font-size: 3em;
+    font-weight: normal;
+    text-decoration: underline;
+
+}
+
