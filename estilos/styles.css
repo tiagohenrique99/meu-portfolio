@@ -18,7 +18,7 @@
 }
 
 :root{
-    --cor01:#F2A391;
+    --cor01: #F2A391;
     --cor02: #1374F2;
     --cor03: #0C18F2;
     --cor04: #080C59;
@@ -27,6 +27,7 @@
     --fonte-sega:'SEGA',cursive;
     --fonte-space:'spaceranger', cursive;
     --fonte-batman:'Batman', cursive;
+    --fonte-padrao: ' Arial,' Helvetica, sans-serif;
 }
 
 *{
@@ -62,13 +63,11 @@ header p{
 nav{
     background-color: var(--cor04);
     padding: 10px;
-    
-   
 }
 
-nav a{
+nav > a{
     font-family: var(--fonte-destaque);
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.623);
     color: white;
     text-decoration: none;
     margin-left: 30px;
@@ -89,32 +88,29 @@ section{
     padding-bottom: 10vh;
 }
 
-
-
-
-
-section#titulo > h1{
+section#sobre > h1{
     font-family: var(--fonte-batman);
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
     padding-bottom: 30px;
 }
 
-section#titulo > h3{
+section#sobre > h3{
     font-family: var(--fonte-space);
     font-size: 2em;
     font-weight: normal;
     padding-bottom: 20px;
 }
 
-section#titulo > p{
-    font-family: var(--fonte-space);
+section#sobre > p{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em;
     line-height: 1.5em;
     text-align: justify;
+    
 }
 
-section#sobre{
+section#front-end{
     background-image: url(../imagens/globo-direita.jpg);
     background-size: cover;
     background-position: right center;
@@ -125,10 +121,12 @@ section#sobre{
     padding: 20px;
 }
 
-section#sobre > p{
-    display: inline-block;
-    height: 50vh;
-    width: 10vw;
+section#front-end > article > p{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: ;
+    height: 90vh;
+    width: 50vw;
 }
 
 
