@@ -17,6 +17,13 @@
     src: url(../fontes/good\ times\ rg.otf)format(opentype);
 }
 
+@font-face {
+    font-family: 'Iceberg', cursive;
+    src: url(../fontes/Iceberg-Regular.ttf)format(truetype)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
 :root{
     --cor01: #F2A391;
     --cor02: #1374F2;
@@ -27,7 +34,7 @@
     --fonte-sega:'SEGA',cursive;
     --fonte-space:'spaceranger', cursive;
     --fonte-batman:'Batman', cursive;
-    --fonte-padrao: ' Arial,' Helvetica, sans-serif;
+    --fonte-padrao:'Iceberg', cursive;
 }
 
 *{
@@ -89,7 +96,7 @@ section{
 }
 
 section#sobre > h1{
-    font-family: var(--fonte-batman);
+    font-family:var(--fonte-batman);
     font-size: 2em;
     text-align: center;
     padding-bottom: 30px;
@@ -102,11 +109,28 @@ section#sobre > h3{
     padding-bottom: 20px;
 }
 
-section#sobre > p{
+div.psobre {
+    display: block;
+    float: left;
+    width: 40vw;
+    height: 80vh;
+    margin:auto
+} 
+
+div.psobre > p{
+    
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em;
     line-height: 1.5em;
     text-align: justify;
+    
+}
+
+div.imgsobre {
+    display: block;
+    padding-left: 30px;
+    
+    
     
 }
 
@@ -124,7 +148,7 @@ section#front-end{
 section#front-end > article > p{
     display: block;
     background-color: rgba(0, 0, 0, 0.26);
-    color: ;
+    color:white;
     height: 90vh;
     width: 50vw;
 }
