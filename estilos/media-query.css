@@ -21,6 +21,8 @@ Grandes telas: acima de 1200px
       display: inline-block;
       width:120px;
       border: none;
-        
+    }
+    main {
+        width: 768px;
     }
 }
