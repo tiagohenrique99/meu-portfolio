@@ -1,236 +1,28 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family:'Batman' ;
-    src: url(../fontes/batmfa__.ttf)format(truetype);
-}
-@font-face {
-    font-family: 'spaceranger';
-    src: url(../fontes/spaceranger.ttf)format(truetype);
-}
-@font-face {
-    font-family: 'SEGA';
-    src: url(../fontes/SEGA.TTF)format(truetype);
-}
-@font-face {
-    font-family: 'good times';
-    src: url(../fontes/good\ times\ rg.otf)format(opentype);
-}
-
-@font-face {
-    font-family: 'Iceberg', cursive;
-    src: url(../fontes/Iceberg-Regular.ttf)format(truetype)
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
-
-:root{
-    --cor01: #F2A391;
-    --cor02: #1374F2;
-    --cor03: #0C18F2;
-    --cor04: #080C59;
-    --cor05: #010326;
-    --fonte-destaque:'good times', cursive;
-    --fonte-sega:'SEGA',cursive;
-    --fonte-space:'spaceranger', cursive;
-    --fonte-batman:'Batman', cursive;
-    --fonte-padrao:'Iceberg', cursive;
-}
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
 header{
-    background-image: url(../imagens/v617batch2-bb-01-technology.jpg);
-    background-position: center center;
+    height: 80px;
+    background-image: url(../imagens/globo-direita.jpg);
     background-size: cover;
-    height: 20vh;
-    
-}
-
-body{
-    background-color: black;
-}
-header h1{
-    font-family: var(--fonte-batman);
-    font-size: 3em;
-    font-weight: normal;
     color: white;
-    padding: 20px;
-}
-
-header p{
-    font-weight: bolder;
-    padding: 20px;
-    vertical-align: bottom;
 }
 
 nav{
-    background-color: var(--cor04);
-    padding: 10px;
-}
-
-nav > a{
-    font-family: var(--fonte-destaque);
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.623);
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: bolder;
-
-}
-
-main{
-    padding: 30px;
-    margin: auto;
     background-color: black;
+    
+}
+nav > a {
     color: white;
-    
-}
-
-section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-}
-
-section#sobre > h1{
-    font-family:var(--fonte-batman);
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-section#sobre > h3{
-    font-family: var(--fonte-space);
-    font-size: 2em;
+    padding-right: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
-    padding-bottom: 20px;
+    text-decoration: none;
 }
-
-div.psobre {
-    display: block;
-    float: left;
-    width: 40vw;
-    height: 80vh;
-    margin:auto
-} 
-
-div.psobre > p{
-    
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-align: justify;
-    
-}
-
-div.imgsobre {
-    display: block;
-    padding-left: 30px;
-    
-    
-    
-}
-
-section#front-end{
-    background-image: url(../imagens/globo-direita.jpg);
-    background-size: cover;
-    background-position: right center;
-    background-attachment: fixed;
-    font-size: 1em;
-    text-align: left;
-    vertical-align: middle;
-    padding: 20px;
-}
-
-section#front-end > article > p{
-    display: block;
-    background-color: rgba(0, 0, 0, 0.26);
-    color:white;
-    height: 90vh;
-    width: 50vw;
-}
-
-
-article{
-    display: inline-block;
-    width: 50vw;
-    padding-left: 20px;
-    padding-top: 20px;
-    
+h1.nome[] { 
 
 }
-
-article h1{
-    font-family: var(--fonte-batman);
-    font-size: 3em;
-    font-weight: normal;
-    text-decoration: underline;
-    padding-bottom: 30px;
-
-}
-
-article p{
-    max-width: 400px;
-    line-height: 1.8em;
-    display: inline-block;
-    font-family: var(--fonte-batman);
-}
-
-section.normal{
-    padding-top: 50px;
-}
-
-section.normal > p{
-    max-width: 500px;
-    text-align: left;
-}
-
-section#container {
-    position: relative;
-    height: 100vh;
-}
-
-div#telefone {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    height: 627px;
-    width: 311px;
-    background-color: blue;
-    background:  url(../imagens/frame-iphone.png) no-repeat;
-
-}
-
-iframe#tela{
-    position: relative;
-    top: 80px;
-    left: 23px;
-    width: 266px;
-    height: 471px;
-}
-
-div#redes-sociais{
-    text-align: right;
-}
-
-div#redes-sociais img {
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
-    box-sizing: border-box;
-}
-
-div#redes-sociais img:hover{
-    border: 2px solid rgba(255, 255, 255, 0.637);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.658);
-    transition: transform 0.4s, border 1s;
-
-}
-
