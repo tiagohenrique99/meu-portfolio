@@ -19,13 +19,37 @@ Grandes telas: acima de 1200px
     }
     nav > a{
       display: inline-block;
-      width:120px;
+      font-size: 1.2em;
+      width:135px;
+      
       border: none;
     }
     main {
-        width: 768px;
+        width: 800px;
     }
 
-    
-    
+    section#projetos div{
+        display: inline-block;
+        transition: .4s;
+
+        
+    }
+
+    section#projetos > div > a > img {
+        height: 130px;
+        width: 250px;
+    }
+
+    section#projetos > div.login {
+        margin-left:60px; 
+    }
+    section#projetos > div.android {
+        margin-left: 110px;
+    }
+    section#projetos > div.redes-sociais {
+        margin: 30px 30px ;
+    }
+    section#projetos > div.cordel {
+        margin-left:50px; 
+    }
 }
