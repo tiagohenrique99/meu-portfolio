@@ -77,7 +77,7 @@ main{
     width: 80vw;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: #ffffffd7;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -108,13 +108,26 @@ section div >img{
    
 }
 
-section#projetos img {
+section#projetos div {
     display: block;
     margin: auto;
+    width: 250px;
+    
+    
+}
+
+
+section#projetos img {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.459);
     border-radius: 8px;
     transition: .6s;
     
+}
+
+section#projetos img:hover{
+    translate: -5px -5px;
+    border: 1px solid black;
+    transition: .6s;
 }
 
 section#projetos p{
@@ -123,4 +136,10 @@ section#projetos p{
     font-size: 1.8em;
     font-family: monospace;
     font-weight: bolder;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
 }

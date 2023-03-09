@@ -25,7 +25,7 @@ Grandes telas: acima de 1200px
       border: none;
     }
     main {
-        width: 800px;
+        width: 768px;
     }
 
     section#projetos div{
@@ -47,9 +47,10 @@ Grandes telas: acima de 1200px
         margin-left: 110px;
     }
     section#projetos > div.redes-sociais {
-        margin: 30px 30px ;
+        margin: 10px 0px 50px 60px;
     }
-    section#projetos > div.cordel {
-        margin-left:50px; 
+    section#projetos > div#cordel {
+        margin-left: 110px;
+        padding-bottom: 50px; 
     }
 }
