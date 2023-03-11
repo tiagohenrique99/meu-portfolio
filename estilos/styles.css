@@ -125,9 +125,9 @@ section#projetos img {
 }
 
 section#projetos img:hover{
-    translate: -5px -5px;
+    transform: scale(1.2);
     border: 1px solid black;
-    transition: .6s;
+    transition: .8s;
 }
 
 section#projetos p{
